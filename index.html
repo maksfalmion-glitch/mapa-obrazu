@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa obrazu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: inline-block;
+            border: 3px solid #007BFF;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mapa obrazu</h1>
+
+    <div class="container">
+        <img src="https://picsum.photos/id/10/800/500" alt="Krajobraz" usemap="#mapa">
+
+        <map name="mapa">
+            <area target="_blank" alt="Strona główna ZS2" title="Strona główna ZS2" href="https://zs2.stargard.pl" coords="0,0,800,250" shape="rect">
+            <area target="_blank" alt="Aktualności" title="Aktualności" href="https://zs2.stargard.pl/aktualnosci/" coords="400,350,80" shape="circle">
+            <area target="_blank" alt="Kontakt" title="Kontakt" href="https://zs2.stargard.pl/kontakt/" coords="100,400,250,420,220,490,80,480" shape="poly">
+        </map>
+    </div>
+
+</body>
+</html>
